@@ -4723,5 +4723,19 @@ svg {
   text-align: center;
   color: #553DD9;
   background: rgba(85, 61, 217, 0.1);
+  border: none;
   border-radius: 10px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.catalog-card__fast-order:focus {
+  outline: none;
+}
+.catalog-card__fast-order:hover {
+  color: #553DD9;
+}
+@media screen and (hover: hover) {
+  .catalog-card__fast-order:hover {
+    background: rgba(85, 61, 217, 0.2);
+  }
 }
