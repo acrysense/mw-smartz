@@ -4532,6 +4532,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
 }
 .catalog__filter-trigger {
   display: -webkit-box;
@@ -4579,6 +4580,9 @@ svg {
   .catalog__filter-trigger {
     width: 100%;
   }
+}
+.catalog__view {
+  margin-left: auto;
 }
 @media screen and (max-width: 743px) {
   .catalog__view {
