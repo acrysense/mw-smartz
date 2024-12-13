@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Smartz - О нас</title>
-	<meta property="og:title" content="Smartz - О нас">
+	<title>Smartz - Избранное</title>
+	<meta property="og:title" content="Smartz - Избранное">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="Smartz - О нас">
+	<meta property="og:site_name" content="Smartz - Избранное">
 	<!-- favicon -->
 	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
 	<link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
@@ -463,59 +463,329 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- content inner -->
-			<section class="content-inner" id="content-inner">
+			<!-- favorites -->
+			<section class="favorites" id="favorites">
 				<div class="container">
-					<div class="content-inner__wrap">
-						<div class="content-inner__left">
-							<nav class="content-nav content-inner__nav">
-								<ul class="content-nav__list">
-									<li class="content-nav__item">
-										<a href="#" class="content-nav__link">Бренды</a>
-									</li>
-									<li class="content-nav__item">
-										<a href="#" class="content-nav__link">Гарантия</a>
-									</li>
-									<li class="content-nav__item">
-										<a href="#" class="content-nav__link">Оплата и доставка</a>
-									</li>
-									<li class="content-nav__item">
-										<a href="#" class="content-nav__link">Сотрудничество</a>
-									</li>
-									<li class="content-nav__item is--active">
-										<a href="about.html" class="content-nav__link">О нас</a>
-									</li>
-									<li class="content-nav__item">
-										<a href="#" class="content-nav__link">Контакты</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<div class="content-inner__right">
-							<div class="content-inner__wrapper">
-								<div class="content-inner__column">
-									<div class="content-inner__content content">
-										<h1>О нас</h1>
-										<h2>SmartZ — интернет-магазин запчастей для мобильных устройств и электроники.</h2>
-										<p>Мы ориентируемся на сервисные центры и мастеров по ремонту, предоставляя профессиональный подход, широкий ассортимент и удобные условия сотрудничества. Наши преимущества — конкурентные цены, быстрая доставка и персонализированный клиентский сервис.</p>
-										<h3 class="decor-line">Опыт более 10 лет</h3>
-										<p>За годы работы мы отобрали надежных поставщиков и партнеров, с которыми напрямую сотрудничаем. Все запчасти поступают с фабрик производителей или их официальных складов, что гарантирует подлинность и качество продукции.</p>
-										<h3 class="decor-line">Надежная доставка</h3>
-										<p>Мы понимаем, что своевременная доставка критически важна для наших клиентов. Поэтому сотрудничаем только с проверенными службами, которые обеспечивают доставку заказов в срок и в надлежащем виде.</p>
-										<h3 class="decor-line">Услуги Smartz включают:</h3>
-										<ul>
-											<li>Доставка товаров через надежные службы.</li>
-											<li>Предварительные заказы на востребованные запчасти.</li>
-											<li>Персонализированный подход к каждому клиенту.</li>
-										</ul>
-										<h3>Если у вас возникнут вопросы или вам нужна помощь с заказом, пишите в <a href="#">WhatsApp</a> или <a href="#">Telegram</a> — мы всегда рады помочь!</h3>
+					<div class="favorites__top">
+						<h1 class="favorites__heading">Избранное</h1>
+						<button class="favorites__clear clear-btn">
+							<span>Очистить избранное</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-trash"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="favorites__topping">
+						<span class="favorites__added">Добавлено 3 товара</span>
+						<div class="favorites__sort">
+							<div class="select-box select-box--single favorites__sort-select">
+								<div class="select-box__container">
+									<div class="select-box__wrap">
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="sort-01" name="sort" checked>
+											<label for="sort-01" class="select-box__label">По популярности</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="sort-02" name="sort">
+											<label for="sort-02" class="select-box__label">По алфавиту</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="sort-03" name="sort">
+											<label for="sort-03" class="select-box__label">По увеличению цены</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="sort-04" name="sort">
+											<label for="sort-04" class="select-box__label">По уменьшению цены</label>
+										</div>
 									</div>
 								</div>
-								<div class="content-inner__column">
-									<div class="content-inner__sticky content">
-										<picture>
-											<img src="img/about-01.jpg" alt="Image">
-										</picture>
+								<div class="select-box__selected">
+									<span class="select-box__placeholder select-box__placeholder--active">По популярности</span>
+									<span class="select-box__values"></span>
+								</div>
+							</div>
+						</div>
+						<div class="c-view favorites__view">
+							<ul class="c-view__list">
+								<li class="c-view__item is--active">
+									<button class="c-view__btn" data-id="table">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-grid-table"></use>
+										</svg>
+									</button>
+								</li>
+								<li class="c-view__item">
+									<button class="c-view__btn" data-id="lines">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-grid-lines"></use>
+										</svg>
+									</button>
+								</li>
+								<li class="c-view__item">
+									<button class="c-view__btn" data-id="rows">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-grid-rows"></use>
+										</svg>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="favorites__wrapper">
+						<div class="catalog-card favorites__item">
+							<div class="catalog-card__top">
+								<a href="#" class="catalog-card__img">
+									<img src="img/catalog-01.png" alt="Image">
+								</a>
+								<picture class="catalog-card__brand">
+									<img src="img/partners-03.svg" alt="Image">
+								</picture>
+								<div class="catalog-card__tags">
+									<span class="catalog-card__tag">Новинка</span>
+								</div>
+							</div>
+							<div class="catalog-card__body">
+								<div class="catalog-card__block">
+									<div class="catalog-card__inner">
+										<a href="#" class="catalog-card__view">Быстрый просмотр</a>
+										<a href="#" class="catalog-card__comment">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-chat"></use>
+											</svg>
+										</a>
+										<button class="c-like catalog-card__like" aria-label="Добавить в избранное">
+											<svg class="c-like__icon">
+												<use xlink:href="img/sprite.svg#icon-favorites"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--active">
+												<use xlink:href="img/sprite.svg#icon-favorites-fill"></use>
+											</svg>
+										</button>
+									</div>
+									<a href="#" class="catalog-card__title">Дисплей для Apple iPhone XS в&nbsp;сборе с рамкой черный (jk) MS</a>
+									<div class="catalog-card__info">
+										<div class="c-article catalog-card__article">
+											<span class="c-article__title">Арт: 69548517534</span>
+											<button class="c-article__copy" aria-label="Скопировать">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-copy"></use>
+												</svg>
+											</button>
+										</div>
+										<span class="catalog-card__status">В наличии: 434</span>
+									</div>
+								</div>
+								<div class="catalog-card__block">
+									<div class="catalog-card__characters">
+										<div class="catalog-card__characters-item">
+											<span class="catalog-card__elem">Кр ОПТ:</span>
+											<span class="catalog-card__elem">1 250 ₽ / шт</span>
+										</div>
+										<div class="catalog-card__characters-item">
+											<span class="catalog-card__elem">ОПТ:</span>
+											<span class="catalog-card__elem">1 144.33 ₽ / шт</span>
+										</div>
+										<div class="catalog-card__characters-item">
+											<span class="catalog-card__elem">Дилер:</span>
+											<span class="catalog-card__elem">1 144.33 ₽ / шт</span>
+										</div>
+									</div>
+									<div class="catalog-card__bottom">
+										<div class="catalog-card__controls">
+											<div class="c-quantity catalog-card__quantity">
+												<div class="c-quantity__inner">
+													<button class="c-quantity__btn c-quantity__btn--minus">
+														<svg>
+															<use xlink:href="/img/sprite.svg#icon-minus"></use>
+														</svg>
+													</button>
+													<input type="number" class="c-quantity__value" placeholder="0">
+													<button class="c-quantity__btn c-quantity__btn--plus">
+														<svg>
+															<use xlink:href="/img/sprite.svg#icon-plus"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<button class="catalog-card__btn">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-basket"></use>
+												</svg>
+											</button>
+										</div>
+										<a href="#" class="catalog-card__fast-order">Быстрый заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card favorites__item">
+							<div class="catalog-card__top">
+								<a href="#" class="catalog-card__img">
+									<img src="img/catalog-01.png" alt="Image">
+								</a>
+								<picture class="catalog-card__brand">
+									<img src="img/partners-03.svg" alt="Image">
+								</picture>
+								<div class="catalog-card__tags">
+									<span class="catalog-card__tag">Новинка</span>
+								</div>
+							</div>
+							<div class="catalog-card__body">
+								<div class="catalog-card__block">
+									<div class="catalog-card__inner">
+										<a href="#" class="catalog-card__view">Быстрый просмотр</a>
+										<a href="#" class="catalog-card__comment">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-chat"></use>
+											</svg>
+										</a>
+										<button class="c-like catalog-card__like" aria-label="Добавить в избранное">
+											<svg class="c-like__icon">
+												<use xlink:href="img/sprite.svg#icon-favorites"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--active">
+												<use xlink:href="img/sprite.svg#icon-favorites-fill"></use>
+											</svg>
+										</button>
+									</div>
+									<a href="#" class="catalog-card__title">Дисплей для Apple iPhone XS в&nbsp;сборе с рамкой черный (jk) MS</a>
+									<div class="catalog-card__info">
+										<div class="c-article catalog-card__article">
+											<span class="c-article__title">Арт: 69548517534</span>
+											<button class="c-article__copy" aria-label="Скопировать">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-copy"></use>
+												</svg>
+											</button>
+										</div>
+										<span class="catalog-card__status">В наличии: 434</span>
+									</div>
+								</div>
+								<div class="catalog-card__block">
+									<div class="catalog-card__characters">
+										<div class="catalog-card__characters-item">
+											<span class="catalog-card__elem">Кр ОПТ:</span>
+											<span class="catalog-card__elem">1 250 ₽ / шт</span>
+										</div>
+										<div class="catalog-card__characters-item">
+											<span class="catalog-card__elem">ОПТ:</span>
+											<span class="catalog-card__elem">1 144.33 ₽ / шт</span>
+										</div>
+										<div class="catalog-card__characters-item">
+											<span class="catalog-card__elem">Дилер:</span>
+											<span class="catalog-card__elem">1 144.33 ₽ / шт</span>
+										</div>
+									</div>
+									<div class="catalog-card__bottom">
+										<div class="catalog-card__controls">
+											<div class="c-quantity catalog-card__quantity">
+												<div class="c-quantity__inner">
+													<button class="c-quantity__btn c-quantity__btn--minus">
+														<svg>
+															<use xlink:href="/img/sprite.svg#icon-minus"></use>
+														</svg>
+													</button>
+													<input type="number" class="c-quantity__value" placeholder="0">
+													<button class="c-quantity__btn c-quantity__btn--plus">
+														<svg>
+															<use xlink:href="/img/sprite.svg#icon-plus"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<button class="catalog-card__btn">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-basket"></use>
+												</svg>
+											</button>
+										</div>
+										<a href="#" class="catalog-card__fast-order">Быстрый заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card favorites__item">
+							<div class="catalog-card__top">
+								<a href="#" class="catalog-card__img">
+									<img src="img/catalog-01.png" alt="Image">
+								</a>
+								<picture class="catalog-card__brand">
+									<img src="img/partners-03.svg" alt="Image">
+								</picture>
+								<div class="catalog-card__tags">
+									<span class="catalog-card__tag">Новинка</span>
+								</div>
+							</div>
+							<div class="catalog-card__body">
+								<div class="catalog-card__block">
+									<div class="catalog-card__inner">
+										<a href="#" class="catalog-card__view">Быстрый просмотр</a>
+										<a href="#" class="catalog-card__comment">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-chat"></use>
+											</svg>
+										</a>
+										<button class="c-like catalog-card__like" aria-label="Добавить в избранное">
+											<svg class="c-like__icon">
+												<use xlink:href="img/sprite.svg#icon-favorites"></use>
+											</svg>
+											<svg class="c-like__icon c-like__icon--active">
+												<use xlink:href="img/sprite.svg#icon-favorites-fill"></use>
+											</svg>
+										</button>
+									</div>
+									<a href="#" class="catalog-card__title">Дисплей для Apple iPhone XS в&nbsp;сборе с рамкой черный (jk) MS</a>
+									<div class="catalog-card__info">
+										<div class="c-article catalog-card__article">
+											<span class="c-article__title">Арт: 69548517534</span>
+											<button class="c-article__copy" aria-label="Скопировать">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-copy"></use>
+												</svg>
+											</button>
+										</div>
+										<span class="catalog-card__status">В наличии: 434</span>
+									</div>
+								</div>
+								<div class="catalog-card__block">
+									<div class="catalog-card__characters">
+										<div class="catalog-card__characters-item">
+											<span class="catalog-card__elem">Кр ОПТ:</span>
+											<span class="catalog-card__elem">1 250 ₽ / шт</span>
+										</div>
+										<div class="catalog-card__characters-item">
+											<span class="catalog-card__elem">ОПТ:</span>
+											<span class="catalog-card__elem">1 144.33 ₽ / шт</span>
+										</div>
+										<div class="catalog-card__characters-item">
+											<span class="catalog-card__elem">Дилер:</span>
+											<span class="catalog-card__elem">1 144.33 ₽ / шт</span>
+										</div>
+									</div>
+									<div class="catalog-card__bottom">
+										<div class="catalog-card__controls">
+											<div class="c-quantity catalog-card__quantity">
+												<div class="c-quantity__inner">
+													<button class="c-quantity__btn c-quantity__btn--minus">
+														<svg>
+															<use xlink:href="/img/sprite.svg#icon-minus"></use>
+														</svg>
+													</button>
+													<input type="number" class="c-quantity__value" placeholder="0">
+													<button class="c-quantity__btn c-quantity__btn--plus">
+														<svg>
+															<use xlink:href="/img/sprite.svg#icon-plus"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<button class="catalog-card__btn">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-basket"></use>
+												</svg>
+											</button>
+										</div>
+										<a href="#" class="catalog-card__fast-order">Быстрый заказ</a>
 									</div>
 								</div>
 							</div>
@@ -523,7 +793,7 @@
 					</div>
 				</div>
 			</section>
-			<!-- end of content inner -->
+			<!-- end of favorites -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

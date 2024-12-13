@@ -90,6 +90,11 @@
 						</div>
 						<a href="#" class="header__link modal-btn" data-id="modal-feedback">Обратный звонок</a>
 					</div>
+					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
 				</div>
 				<div class="header__wrapper header__wrapper--bottom">
 					<div class="c-catalog header__catalog">
@@ -366,7 +371,7 @@
 									<svg class="input-field__icon">
 										<use xlink:href="img/sprite.svg#icon-search"></use>
 									</svg>
-									<input type="text" class="input-field__input" placeholder="Поиск по каталогу магазина">
+									<input type="text" class="input-field__input" placeholder="Поиск">
 									<div class="input-field__dropdown">
 										<ul class="input-field__list">
 											<li class="input-field__list-item">
@@ -390,7 +395,7 @@
 					</div>
 					<div class="header__controls">
 						<div class="header__buttons">
-							<a href="#" class="header__btn">
+							<a href="favorites.html" class="header__btn">
 								<svg>
 									<use xlink:href="img/sprite.svg#icon-favorites"></use>
 								</svg>
@@ -483,6 +488,119 @@
 						</div>
 						<div class="catalog__right">
 							<div class="catalog__top">
+								<div class="catalog__sort">
+									<div class="select-box select-box--single catalog__sort-select">
+										<div class="select-box__container">
+											<div class="select-box__wrap">
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="sort-01" name="sort" checked>
+													<label for="sort-01" class="select-box__label">По популярности</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="sort-02" name="sort">
+													<label for="sort-02" class="select-box__label">По алфавиту</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="sort-03" name="sort">
+													<label for="sort-03" class="select-box__label">По увеличению цены</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="sort-04" name="sort">
+													<label for="sort-04" class="select-box__label">По уменьшению цены</label>
+												</div>
+											</div>
+										</div>
+										<div class="select-box__selected">
+											<span class="select-box__placeholder select-box__placeholder--active">По популярности</span>
+											<span class="select-box__values"></span>
+										</div>
+									</div>
+									<div class="select-box catalog__sort-select">
+										<div class="select-box__container">
+											<div class="select-box__wrap">
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-name-01" name="sort-name">
+													<span class="select-box__icon"></span>
+													<label for="sort-name-01" class="select-box__label">Apple</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-name-02" name="sort-name">
+													<span class="select-box__icon"></span>
+													<label for="sort-name-02" class="select-box__label">Huawei</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-name-03" name="sort-name">
+													<span class="select-box__icon"></span>
+													<label for="sort-name-03" class="select-box__label">Infinix</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-name-04" name="sort-name">
+													<span class="select-box__icon"></span>
+													<label for="sort-name-04" class="select-box__label">Nokia</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-name-05" name="sort-name">
+													<span class="select-box__icon"></span>
+													<label for="sort-name-05" class="select-box__label">OnePlus</label>
+												</div>
+											</div>
+										</div>
+										<div class="select-box__selected">
+											<span class="select-box__placeholder select-box__placeholder--active">Бренд</span>
+											<span class="select-box__values"></span>
+										</div>
+									</div>
+									<div class="select-box catalog__sort-select">
+										<div class="select-box__container">
+											<div class="select-box__wrap">
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-compatibility-01" name="sort-compatibility">
+													<span class="select-box__icon"></span>
+													<label for="sort-compatibility-01" class="select-box__label">iPhone 15 Pro Max</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-compatibility-02" name="sort-compatibility">
+													<span class="select-box__icon"></span>
+													<label for="sort-compatibility-02" class="select-box__label">iPhone 15 Pro</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-compatibility-03" name="sort-compatibility">
+													<span class="select-box__icon"></span>
+													<label for="sort-compatibility-03" class="select-box__label">iPhone 15</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-compatibility-04" name="sort-compatibility">
+													<span class="select-box__icon"></span>
+													<label for="sort-compatibility-04" class="select-box__label">iPhone 15 Plus</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-compatibility-05" name="sort-compatibility">
+													<span class="select-box__icon"></span>
+													<label for="sort-compatibility-05" class="select-box__label">iPhone 14 Pro Max</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-compatibility-06" name="sort-compatibility">
+													<span class="select-box__icon"></span>
+													<label for="sort-compatibility-06" class="select-box__label">iPhone 14 Pro</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-compatibility-07" name="sort-compatibility">
+													<span class="select-box__icon"></span>
+													<label for="sort-compatibility-07" class="select-box__label">iPhone 14</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="sort-compatibility-08" name="sort-compatibility">
+													<span class="select-box__icon"></span>
+													<label for="sort-compatibility-08" class="select-box__label">iPhone 14 Plus</label>
+												</div>
+											</div>
+										</div>
+										<div class="select-box__selected">
+											<span class="select-box__placeholder select-box__placeholder--active">Совместимость</span>
+											<span class="select-box__values"></span>
+										</div>
+									</div>
+								</div>
 								<button class="catalog__filter-trigger">
 									<svg>
 										<use xlink:href="img/sprite.svg#icon-filter"></use>
