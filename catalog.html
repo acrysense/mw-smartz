@@ -410,17 +410,18 @@
 							</a>
 						</div>
 						<div class="c-user header__user">
-							<a href="#" class="c-user__trigger">
+							<a href="#" class="c-user__trigger c-user__trigger--mobile-icon">
 								<svg>
 									<use xlink:href="img/sprite.svg#icon-user"></use>
 								</svg>
-								<span>Аккаунт</span>
+								<span>Войти</span>
 							</a>
-							<!-- <a href="#" class="c-user__trigger c-user__trigger--mobile-icon">
+							<!-- if authorized -->
+							<!-- <a href="#" class="c-user__trigger">
                         <svg>
                             <use xlink:href="img/sprite.svg#icon-user"></use>
                         </svg>
-                        <span>Войти</span>
+                        <span>Аккаунт</span>
                     </a> -->
 							<div class="c-user__dropdown">
 								<ul class="c-user__list">
@@ -1629,6 +1630,85 @@
 		</div>
 	</div>
 	<!-- end of modal -->
+	<!-- menu -->
+	<div class="menu" id="menu">
+		<div class="container">
+			<div class="menu__wrap">
+				<div class="menu__top">
+					<a href="#" class="menu__city modal-btn" data-id="modal-select-city">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-pin"></use>
+						</svg>
+						<span>Махачкала</span>
+					</a>
+					<button class="menu__close" aria-label="Закрыть">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<nav class="nav menu__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Бренды</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Гарантия</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Оплата и доставка</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Сотрудничество</a>
+						</li>
+						<li class="nav__item">
+							<a href="about.html" class="nav__link">О нас</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="menu__bottom">
+					<div class="c-socnav menu__socnav">
+						<ul class="c-socnav__list">
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link" aria-label="WhatsApp">
+									<img src="img/icon-whapp.svg" alt="WhatsApp">
+								</a>
+							</li>
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link" aria-label="Telegram">
+									<img src="img/icon-tg.svg" alt="Telegram">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-contacts menu__contacts">
+						<div class="menu-contacts__item">
+							<a href="mailto:info@smartz.ru" class="menu-contacts__elem">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-email"></use>
+								</svg>
+								<span>info@smartz.ru</span>
+							</a>
+						</div>
+						<div class="menu-contacts__item">
+							<a href="tel:+79634026252" class="menu-contacts__elem">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-phone"></use>
+								</svg>
+								<span>+7 (963) 402-62-52</span>
+							</a>
+							<span class="menu-contacts__help">c 10 до 19:00 <br>Пт перерыв: с 11:30 до 14:00</span>
+						</div>
+					</div>
+					<a href="#" class="menu__btn btn btn--border">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of menu -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
