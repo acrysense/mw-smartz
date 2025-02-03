@@ -836,7 +836,7 @@
 														</svg>
 													</button>
 												</div>
-												<a href="#" class="catalog-card__fast-order">Быстрый заказ</a>
+												<a href="#" class="catalog-card__fast-order modal-btn" data-id="modal-fast-buy">Быстрый заказ</a>
 											</div>
 										</div>
 									</div>
@@ -1773,6 +1773,61 @@
 								</svg>
 							</button>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-fast-buy">
+		<div class="modal__wrap modal__wrap--wide">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__holder">
+					<div class="modal__block">
+						<div class="modal-fast-buy modal__fast-buy">
+							<a href="product.html" class="modal-fast-buy__img">
+								<img src="img/catalog-01.png" alt="Image">
+							</a>
+						</div>
+						<a href="#" class="modal-fast-buy__title">Дисплей для Apple iPhone XS в сборе с рамкой черный (jk) MS</a>
+						<div class="modal-fast-buy__prices">
+							<div class="modal-fast-buy__prices-item">
+								<span class="modal-fast-buy__elem">Кр ОПТ:</span>
+								<span class="modal-fast-buy__elem">1 250 ₽ / шт</span>
+							</div>
+							<div class="modal-fast-buy__prices-item">
+								<span class="modal-fast-buy__elem">ОПТ:</span>
+								<span class="modal-fast-buy__elem">1 144.33 ₽ / шт</span>
+							</div>
+							<div class="modal-fast-buy__prices-item">
+								<span class="modal-fast-buy__elem">Дилер:</span>
+								<span class="modal-fast-buy__elem">1 144.33 ₽ / шт</span>
+							</div>
+						</div>
+					</div>
+					<div class="modal__block">
+						<span class="modal__title">Быстрый заказ</span>
+						<p class="modal__description">Оставьте заявку и наши специалисты свяжутся с Вами в рабочее время.</p>
+						<form action="#" class="modal-form modal__form">
+							<div class="input-field modal-form__input">
+								<div class="input-field__inner">
+									<input type="text" class="input-field__input" placeholder="Ваш телефон" data-inputmask="'mask': '+7 (999) 999-99-99'">
+								</div>
+								<span class="input-field__error">Неверные данные</span>
+							</div>
+							<div class="input-field modal-form__input">
+								<div class="input-field__inner">
+									<input type="text" class="input-field__input" placeholder="Имя">
+								</div>
+								<span class="input-field__error">Неверные данные</span>
+							</div>
+							<button class="modal-form__btn btn">Отправить</button>
+							<span class="modal-form__help">Я согласен на обработку <a href="#">персональных данных</a>.*</span>
+						</form>
 					</div>
 				</div>
 			</div>
