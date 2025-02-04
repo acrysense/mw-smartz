@@ -6114,8 +6114,9 @@ svg {
     max-width: 447px;
     width: 100%;
   }
-  .product__block:last-child {
+  .product__block:nth-child(2) {
     max-width: 290px;
+    min-width: 290px;
     width: 100%;
   }
 }
