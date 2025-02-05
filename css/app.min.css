@@ -3233,6 +3233,97 @@ svg {
   }
 }
 
+.ymaps-2-1-79-balloon {
+  padding: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.ymaps-2-1-79-balloon__content {
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.ymaps-2-1-79-balloon__close-button {
+  width: 40px !important;
+  background: url("../img/sprite.svg#icon-close") !important;
+  background-repeat: no-repeat !important;
+  background-size: 14px !important;
+  background-position: center center !important;
+}
+
+.ymaps-2-1-79-balloon__tail {
+  background: transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.ymaps-2-1-79-default-cluster {
+  background: transparent !important;
+}
+
+.custom-clusters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  background: #FFFFFF;
+  border: 3px solid #76B82A;
+  border-radius: 50%;
+}
+
+.custom-balloon {
+  padding: 20px;
+  min-width: 200px;
+  background: #FFFFFF;
+  border: none;
+}
+.custom-balloon__title {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 600;
+}
+.custom-balloon__address {
+  display: block;
+  margin-top: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+}
+.custom-balloon__link {
+  display: block;
+  margin-top: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  color: #76B82A;
+}
+.custom-balloon__link:hover {
+  color: #76B82A;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

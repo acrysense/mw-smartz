@@ -1894,6 +1894,65 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script>
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map("availability-map", {
+				center: [55.751574, 37.573856],
+				zoom: 10,
+				controls: []
+			});
+
+			var placemarks = [{
+					coordinates: [55.751574, 37.573856],
+					name: "Магазин 1",
+					address: "ул. Тверская, д. 1",
+				},
+				{
+					coordinates: [55.761574, 37.683856],
+					name: "Магазин 2",
+					address: "ул. Арбат, д. 12",
+				},
+				{
+					coordinates: [55.741574, 37.263856],
+					name: "Магазин 3",
+					address: "ул. Садовая, д. 5",
+				}
+			];
+
+			var clusterer = new ymaps.Clusterer({
+				clusterIcons: [{
+					href: 'https://example.com/custom-cluster.png',
+					size: [50, 50],
+					offset: [-25, -25]
+				}],
+				clusterIconContentLayout: ymaps.templateLayoutFactory.createClass(
+					'<div class="custom-clusters">' + '{{ properties.geoObjects.length }}</div>'
+				)
+			});
+
+			placemarks.forEach(function(place) {
+				var placemark = new ymaps.Placemark(place.coordinates, {
+					balloonContent: `
+                        <div class="custom-balloon">
+                            <span class="custom-balloon__title">${place.name}</span>
+                            <span class="custom-balloon__address">${place.address}</span>
+                        </div>
+                    `
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/sprite.svg#icon-pin-black',
+					iconImageSize: [42, 42],
+					iconImageOffset: [-15, -42]
+				});
+
+				clusterer.add(placemark);
+			});
+			myMap.geoObjects.add(clusterer);
+		}
+	</script>
 </body>
 
 </html>
