@@ -823,7 +823,7 @@ svg {
 
 .simplebar-track.simplebar-vertical {
   top: 0;
-  right: 20px;
+  right: 12px;
   z-index: 201;
   width: 5px;
   height: 100%;
@@ -4793,6 +4793,9 @@ svg {
   }
 }
 
+.catalog {
+  overflow: hidden;
+}
 .catalog--indent {
   padding: 75px 0;
 }
@@ -4953,6 +4956,10 @@ svg {
   }
   .catalog__sort-select.select-box--single {
     max-width: none;
+  }
+  .catalog__sort-select .select-box__container {
+    min-width: auto;
+    width: 100%;
   }
 }
 .catalog__view {
