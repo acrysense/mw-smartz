@@ -7032,7 +7032,6 @@ svg {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-width: 116px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -7044,6 +7043,12 @@ svg {
 @media screen and (hover: hover) {
   .basket-products__title[href]:hover {
     color: #76B82A;
+  }
+}
+@media screen and (min-width: 744px) {
+  .basket-products__title {
+    max-width: 136px;
+    min-width: 136px;
   }
 }
 @media screen and (max-width: 743px) {
@@ -7070,6 +7075,12 @@ svg {
 .basket-products__quantity .c-quantity__value {
   margin: 0 1px;
   font-size: 15px;
+}
+@media screen and (min-width: 744px) {
+  .basket-products__prices {
+    max-width: 156px;
+    min-width: 156px;
+  }
 }
 @media screen and (max-width: 743px) {
   .basket-products__prices {
@@ -7108,11 +7119,11 @@ svg {
   white-space: nowrap;
 }
 .basket-products__elem:first-child {
-  max-width: 45px;
-  min-width: 45px;
+  max-width: 60px;
+  min-width: 60px;
 }
 .basket-products__elem:last-child {
-  max-width: calc(100% - 45px - 5px);
+  max-width: calc(100% - 60px - 5px);
   width: 100%;
 }
 .basket-products__delete {
